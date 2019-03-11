@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myxmlns="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/exit_title"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/text_green">
+
+        <ImageView
+            android:id="@+id/mym_title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/exit_linear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的信息"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="120px"-->
+    <!--android:layout_marginTop="30px">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="@dimen/my_msg_ml"-->
+    <!--android:text="用户名"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="20sp"/>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/msg_username"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="@dimen/my_msg_ml"-->
+    <!--android:text="用户名"-->
+    <!--android:textColor="@android:color/black"-->
+    <!--android:textSize="20sp"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/view_color"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="姓名"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msg_xingming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="姓名"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="性别"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msg_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="性别"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="固定电话"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msg_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="固定电话"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="@string/sj"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msg_shouji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="@string/sj"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="@string/yx"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msg_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="@string/yx"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="@string/qq"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msg_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="@string/qq"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="@string/fgld"
+            android:textColor="@android:color/black"
+            android:textSize="21sp"/>
+
+        <TextView
+            android:id="@+id/msg_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="@string/fgld"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_msg_ml"
+            android:text="@string/bm"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/msg_bm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/my_msg_ml"
+            android:text="@string/bm"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+</LinearLayout>
+

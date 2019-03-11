@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/login_beijing"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/denglu_logo"/>
+
+    <ImageView
+        android:id="@+id/login_ming"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/login_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ming"/>
+
+    <LinearLayout
+        android:id="@+id/login_linear_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_ming"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/login_corners_up"
+            android:drawableLeft="@mipmap/denglu_user"
+            android:drawablePadding="8dp"
+            android:hint="@string/un"
+            android:maxLength="30"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+
+
+        <EditText
+            android:id="@+id/login_psd"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/login_corners_down"
+            android:drawableLeft="@mipmap/denglu_psd"
+            android:drawablePadding="8dp"
+            android:hint="@string/up"
+            android:maxLength="30"
+            android:paddingLeft="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_linear_edit"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/login_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="记住密码"
+            android:textColor="#4B4B4B"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/login_denglu"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:src="@mipmap/denglu"/>
+</RelativeLayout>

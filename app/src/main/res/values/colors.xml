@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0072bb</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 底部切换菜单 -->
+    <color name="text_green">#0072bb</color>
+    <color name="text_gray">#c6c6c6</color>
+
+    <!--view 颜色-->
+    <color name="view_color">#e9e7ef</color>
+    <color name="text_lan">#0072bb</color>
+    <color name="hint_hui">#9C9C9C</color>
+    <color name="www">#ffffffff</color>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tel_title"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/text_green">
+
+        <ImageView
+            android:id="@+id/tel_title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/tel_linear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="通讯录"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tel_list"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

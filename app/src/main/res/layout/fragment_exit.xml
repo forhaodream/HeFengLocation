@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="#25a1f0">
+
+        <ImageView
+            android:id="@+id/exit_title_fanhui"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/fanhui"/>
+
+        <TextView
+            android:id="@+id/exit_linear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="我的"
+            android:textColor="@android:color/white"
+            android:textSize="26sp"/>
+
+        <ImageView
+            android:id="@+id/mine_header"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/nan"/>
+
+        <TextView
+            android:id="@+id/mine_login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mine_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/exit_img"-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:src="@mipmap/tuichu"/>-->
+
+    <LinearLayout
+        android:id="@+id/mine_my_msg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="3dp"
+                android:src="@mipmap/mym"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="我的信息"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/item_arrow_indicator"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <LinearLayout
+        android:id="@+id/mine_my_manager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="3dp"
+                android:src="@mipmap/mymanger"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="后台管理"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/item_arrow_indicator"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <LinearLayout
+        android:id="@+id/mine_my_up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="3dp"
+                android:src="@mipmap/mup"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="版本更新"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/item_arrow_indicator"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <LinearLayout
+        android:id="@+id/mine_my_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="3dp"
+                android:src="@mipmap/mexit"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="退出登录"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/item_arrow_indicator"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"/>
+
+    <!--<ImageView-->
+    <!--android:id="@+id/mine_exit"-->
+    <!--android:layout_width="330dp"-->
+    <!--android:layout_height="58dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@mipmap/tuichu"/>-->
+</LinearLayout>

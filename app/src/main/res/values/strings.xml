@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">检修定位</string>
+    <string name="hint_name">例如: 1A01</string>
+    <string name="sj">手机</string>
+    <string name="yx">邮箱</string>
+    <string name="qq">QQ</string>
+    <string name="fgld">分管领导</string>
+    <string name="bm">部门</string>
+    <string name="htgl">后台管理</string>
+    <string name="nomsg">暂时没有数据</string>
+    <string name="qx">取消</string>
+    <string name="zzxz">正在下载...</string>
+    <string name="noqx">你没有权限访问该界面</string>
+    <string name="fjbh">请输入风机编号</string>
+    <string name="un">请输入用户名</string>
+    <string name="up">请输入密码</string>
+</resources>

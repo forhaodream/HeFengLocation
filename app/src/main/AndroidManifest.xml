@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.lh.ch.hefenglocation">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.INTERNET"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.READ_SMS"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.READ_PHONE_STATE"/>
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.ACCESS_WIFI_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.CHANGE_WIFI_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="com.huawei.systemmanager.permission.ACCESS_INTERFACE"/>
+
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:name=".update.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="GONuEq3jp8m7tGjjcG65TEG56MTIf3ZX"/>
+        <activity android:name=".activity.GuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lh.ch.hefenglocation.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!-- 权限检测界面 -->
+        <activity
+            android:name=".activity.PermissionController"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.TakePhotoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.BaiDuMapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ShowImgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MyMsgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ManagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MapWebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MapTeAty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
